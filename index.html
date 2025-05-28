@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Life</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+background-color: #afeeee ;
+margin: 0;
+padding: 0;
+}
+header, footer {
+background-color: #afeeee ;
+text-align: center;
+padding: 1rem;
+}
+nav {
+background-color: #333;
+text-align: center;
+padding: 10px;
+}
+nav a {
+color: white;
+margin: 0 15px;
+text-decoration: none;
+font-size: 18px;
+cursor: pointer;
+}
+main > section {
+display: none;
+padding: 20px;
+background: white;
+margin: 20px;
+border-radius: 8px;
+}
+.active-section {
+display: block;
+}
+aside {
+background: white;
+padding: 20px;
+border-radius: 8px;
+margin: 20px;
+text-align: center;
+}
+aside img {
+width: 150px;
+height: 150px;
+border-radius: 50%;
+margin-bottom: 10px;
+}
+.gallery-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 20px;
+}
+iframe {
+width: 100%;
+height: 300px;
+border: none;
+}
+.map-container {
+margin-top: 20px;
+}
+ul li a:link {
+color: #007bff;
+}
+ul li a:visited {
+color: #800080;
+}
+ul li a:hover {
+background-color: #ff6347;
+color: white;
+}
+ul li a:active {
+background-color: #ff0000;
+color: white;
+}
+</style>
+</head>
+<body>
+<header>
+<h1>Welcome to My Personal Life</h1>
+<p>My name is Jewerson Jan O. Aguilar and i am 20 yrs old.</p>
+</header>
+<nav>
+<a onclick="showSection('home')">Home</a>
+<a onclick="showSection('about')">About Me</a>
+<a onclick="showSection('myspace')">My Space</a>
+</nav>
+<main>
+<section id="home" class="active-section">
+<h2>Home</h2>
+<p>Welcome to my life website! Explore and know me better.</p>
+<div class="gallery-grid">
+<img src="C:\Users\user\Downloads\2bc519b2-001c-4cd1-a3a5-c6afde40cfad.jpg"
+alt="Image 1" style="width:100%; border-radius: 10px;">
+<img src="C:\Users\user\Downloads\7ac43534-be2a-488f-a698-dd00413eb969.jpg"
+alt="Image 2" style="width:100%; border-radius: 10px;">
+<img src="C:\Users\user\Downloads\dc647d1a-eaa0-4cd4-b7a4-d61f1a4bef83.jpg"
+alt="Image 3" style="width:100%; border-radius: 10px;">
+<img
+src="C:\Users\user\Downloads\a9148deb-8ec6-4f0e-b904-7896684a28c3.jpg"
+ alt="Image 4" style="width:100%; border-radius: 10px;">
+</div>
+</section>
+<section id="about">
+<h2>About Me</h2>
+<p>My nickname is Toks.</p>
+<p>I love riding a motorcycle and traveling to different places.</p>
+<p>My dream is to become a successful businessman.</p>
+</section>
+<section id="gallery">
+</div>
+</section>
+<section id="myspace">
+<h2>My Space</h2>
+<aside>
+<h3>My motorcycle</h3>
+<img
+src=C:\Users\user\Downloads\5fc8b958-9a67-4be4-b66d-09aabcce5222.jpg>
+<p>This motorcycle has saved me. Whenever I have problems in life, I just use it to go around and around wherever I can forget about my problems.</p>
+<p>My Active Accounts:</p>
+<ul>
+<li><a href="https://www.facebook.com/TokShiiee">Facebook</a></li>
+<li><a href="https://www.instagram.com/hevskoti/">Instagram</a></li>
+</ul>
+</aside>
+</section>
+<section id="contact">
+<h2>Contact Us</h2>
+<p>If you'd like to connect or ask anything, feel free to reach out via my social media
+accounts or contact me in this number 09664700090.</p>
+<ul>
+<li><a href="https://ph.pinterest.com/tyshaunallen12/">Pinterest</a></li>
+<li><a href="https://www.messenger.com/t/100071316820790">Messenger</a></li>
+<li><a href="https://www.instagram.com/shaun.___.v/">Instagram</a></li>
+</ul>
+</iframe>
+</div>
+</section>
+</main>
+<footer>
+<p>&copy; 2025 My Life. All rights reserved.</p>
+</footer>
+<script>
+function showSection(id) {
+const sections = document.querySelectorAll('main > section');
+sections.forEach(section => {
+section.classList.remove('active-section');
+});
+document.getElementById(id).classList.add('active-section');
+}
+</script>
+</body>
+</html>
